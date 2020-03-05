@@ -1,0 +1,187 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div class="slider-with-overlay">
+
+    <div class="slider-container rev_slider_wrapper" style="height: 670px;">
+        <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 670, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': false }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
+            <ul>
+                <li class="slide-overlay slide-overlay-level-7" data-transition="fade">
+                    <img src="~/images/slides/slide-corporate-2-1.jpg"
+                         alt=""
+                         data-bgposition="center center"
+                         data-bgfit="cover"
+                         data-bgrepeat="no-repeat"
+                         class="rev-slidebg">
+
+                    <div class="tp-caption"
+                         data-x="['left','left','center','center']" data-hoffset="['145','145','-150','-240']"
+                         data-y="center" data-voffset="['-50','-50','-50','-75']"
+                         data-start="1000"
+                         data-transform_in="x:[-300%];opacity:0;s:500;"
+                         data-transform_idle="opacity:0.2;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+
+                    <div class="tp-caption text-color-light font-weight-normal"
+                         data-x="['left','left','center','center']" data-hoffset="['100','200','0','0']"
+                         data-y="center" data-voffset="['-50','-50','-50','-75']"
+                         data-start="700"
+                         data-fontsize="['32','32','32','50']"
+                         data-lineheight="['25','25','25','45']"
+                         data-transform_in="y:[-50%];opacity:0;s:500;">CLEAN WITH SMITH</div>
+
+                    <div class="tp-caption d-none d-md-block"
+                         data-frames='[{"delay":3800,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                         data-x="['left','left','center','center']" data-hoffset="['365','365','80','135']"
+                         data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="img/slides/slide-blue-line.png" alt=""></div>
+
+                    <div class="tp-caption"
+                         data-x="['left','left','center','center']" data-hoffset="['440','440','150','240']"
+                         data-y="center" data-voffset="['-50','-50','-50','-75']"
+                         data-start="1000"
+                         data-transform_in="x:[300%];opacity:0;s:500;"
+                         data-transform_idle="opacity:0.2;s:500;"><img src="img/slides/slide-title-border.png" alt=""></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slider-contact-form">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <div class="slider-contact-form-wrapper bg-primary rounded p-5 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="2000">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h2 class="font-weight-light text-color-light text-6 mb-2">Get a <strong>Quote</strong></h2>
+                                <p class="text-color-light opacity-7 font-weight-light mb-4 px-5">Enter your personal info below and let’s start talking about your new website or customized project.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <form id="contactForm" class="contact-form form-style-2" action="php/contact-form.php" method="POST">
+                                    <div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
+                                        <strong>Success!</strong> Your message has been sent to us.
+                                    </div>
+                                    <div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
+                                        <strong>Error!</strong> There was an error sending your message.
+                                        <span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" placeholder="Your Name..." required>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col mb-4">
+                                            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" id="message" placeholder="Your Message..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col text-center">
+                                            <input type="submit" value="SUBMIT" class="btn btn-dark px-4 py-3" data-loading-text="Loading...">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="row pt-4 appear-animation" data-appear-animation="fadeInUpShorter">
+        <div class="col-lg-7 pr-lg-5">
+            <h2 class="font-weight-normal line-height-1">A place where amazing things <strong class="font-weight-extra-bold">Get Done!</strong></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat urna arcu, vel molestie nunc commodo non. Nullam vestibulum odio vitae fermentum rutrum.</p>
+            <p>Mauris lobortis nulla ut aliquet interdum. Donec commodo ac elit sed placerat. Mauris rhoncus est ac sodales gravida. In eros felis, elementum aliquam nisi vel, pellentesque faucibus nulla.</p>
+
+            <div class="row pt-4 my-5">
+                <div class="col-lg-6">
+                    <div class="feature-box feature-box-style-2 mb-4">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-support text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">Customer Support</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-style-2 mb-4">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-doc text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">HTML5 / CSS3 / JS</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-style-2 mb-4 mb-lg-0">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-social-google text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">500+ Google Fonts</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-box feature-box-style-2 mb-4">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-layers text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">Sliders</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-style-2 mb-4">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-user text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">Icons</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-style-2">
+                        <div class="feature-box-icon">
+                            <i class="icons icon-menu text-color-primary"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="font-weight-bold text-4 mb-0">Buttons</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-5">
+            <h4 class="font-weight-normal line-height-1 mb-5">Our <strong class="font-weight-extra-bold">Location</strong></h4>
+            <ul class="list list-icons list-icons-style-3 mt-5">
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</li>
+                <li><i class="fas fa-phone"></i> <strong>Phone:</strong> (123) 456-789</li>
+                <li><i class="far fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+            </ul>
+
+            <hr class="my-5">
+
+            <h4 class="font-weight-normal">Business <strong class="font-weight-extra-bold">Hours</strong></h4>
+            <ul class="list list-icons list-dark mt-4">
+                <li><i class="far fa-clock"></i> Monday - Friday - 9am to 5pm</li>
+                <li><i class="far fa-clock"></i> Saturday - 9am to 2pm</li>
+                <li><i class="far fa-clock"></i> Sunday - Closed</li>
+            </ul>
+        </div>
+    </div>
+</div>
