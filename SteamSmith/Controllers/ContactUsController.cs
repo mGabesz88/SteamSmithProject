@@ -2,12 +2,11 @@
 
 namespace SteamSmith.Controllers
 {
-    public class FaqController : Controller
+    public class ContactUsController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
-
     }
 }

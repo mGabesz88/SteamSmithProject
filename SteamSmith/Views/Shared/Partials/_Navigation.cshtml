@@ -1,0 +1,14 @@
+﻿<nav class="collapse">
+    <ul class="nav nav-pills" id="mainNav">
+        <li class="dropdown">
+            @Html.ActionLink("Home", "Index", "Home", null, new {@class = "dropdown - item dropdown - toggle" })
+                                                   
+        </li>
+        <li class="dropdown">
+            @Html.ActionLink("FAQ", "Index", "Faq", null, new { @class = "dropdown - item dropdown - toggle" })
+        </li>
+        <li class="dropdown">
+            @Html.ActionLink("Contact Us", "Index", "ContactUs", null, new { @class = "dropdown - item dropdown - toggle" })
+        </li>
+    </ul>
+</nav>

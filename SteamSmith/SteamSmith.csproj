@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\FaqController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -3034,8 +3035,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -3188,7 +3187,9 @@
     <Content Include="Vendor\twentytwenty\scss\foundation.scss" />
     <Content Include="Vendor\twentytwenty\scss\twentytwenty-no-compass.scss" />
     <Content Include="Vendor\twentytwenty\scss\twentytwenty.scss" />
-    <Content Include="Views\Faq\Questions.cshtml" />
+    <Content Include="Views\Faq\index.cshtml" />
+    <Content Include="Views\ContactUs\index.cshtml" />
+    <Content Include="Views\Shared\Partials\_Navigation.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
