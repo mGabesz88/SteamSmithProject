@@ -50,7 +50,7 @@ namespace SteamSmith.Controllers
 
         private bool SendEmail(MailMessage message)
         {
-            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["smtpSetting"], 25);
+            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["smtpSetting"], 465);
             try
             {
                 client.Send(message);
