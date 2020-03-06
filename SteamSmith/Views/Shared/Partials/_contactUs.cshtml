@@ -1,0 +1,55 @@
+﻿@model SteamSmith.Models.ContactUs
+
+@*@using (Html.BeginForm("SubmitForm", "ContactUs", FormMethod.Post, new{ id = "contactForm", @class="contact-form"}))
+    {*@
+
+<form id="contactForm" class="contact-form" action="@Url.Action("SubmitForm", "ContactUs")" method="POST">
+    @Html.AntiForgeryToken()
+    <div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
+        <strong>Success!</strong> Your message has been sent to us.
+    </div>
+
+    <div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
+        <strong>Error!</strong> There was an error sending your message.
+        <span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-lg-6">
+            <label class="required font-weight-bold text-dark text-2">Full Name</label>
+            @Html.TextBoxFor(m => m.Name, null, new {data_msg_required = "Please enter your name.", maxlength = "100", @class = "form-control", name = "name", id = "name", required = true})
+        </div>
+        <div class="form-group col-lg-6">
+            <label class="required font-weight-bold text-dark text-2">Email Address</label>
+            @Html.TextBoxFor(m => m.EmailAddress, null, new
+            {
+                data_msg_required = "Please enter your email address.",
+                data_msg_email = "Please enter a valid email address.",
+                maxlength = "100", @class = "form-control", name = "email", id = "email", required = true, type = "email"
+            })
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label class="font-weight-bold text-dark text-2">Subject</label>
+            @Html.TextBoxFor(m => m.Subject, null, new {data_msg_required = "Please enter the subject.", maxlength = "100", @class = "form-control", name = "subject", id = "subject", required = true})
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label class="required font-weight-bold text-dark text-2">Message</label>
+            @Html.TextAreaFor(m => m.Message, new {maxlength = "5000", data_msg_required = "Please enter your message.", rows = "8", @class = "form-control", id = "message", required = true})
+        </div>
+    </div>
+    <div class="form-row">
+        @Html.ValidationSummary()
+        <div class="form-group col">
+            <input type="submit" value="Send Message" class="btn btn-primary btn-modern">
+        </div>
+    </div>
+</form>
+
+
+
+    @*}*@
+
